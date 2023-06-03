@@ -1,0 +1,62 @@
+.container {
+    border: 1px solid grey;
+    padding: 15px;
+    margin: 15px;
+    height: 1500px;
+}
+.container > div.test1 {
+    padding: 20px;
+    font-family: sans-serif;
+}
+.container > div.test2 {
+    background: #000;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 1px;
+    font-family: sans-serif;
+    color: #ffffff;
+    border: 1px solid transparent;
+    transition: all .2s ease-in-out;
+}
+.container > div.test2 > ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 25%;
+}
+.container > div.test2 > ul > li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1.5px solid transparent;
+    transition: all .2s ease-in-out;
+}
+.container > div.test2 > ul > li:hover {
+    border-bottom: 1.5px solid #ffffff;
+}
+.container > div.test2:hover {
+    border: 1px solid red;
+    background-color: rgb(31, 31, 31);
+    font-family: sans-serif;
+}
+.container > div.test3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    height: 800px;
+}
+.container > div.test3 > .header {
+    text-transform: uppercase;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.39);
+}
+.container > div.test3 > p:nth-child(5) {
+    position: sticky;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: green;
+}
